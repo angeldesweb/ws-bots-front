@@ -16,7 +16,7 @@
 		<label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
 		<slot />
 	</div>
-	<div class="drawer-side">
+	<div class="drawer-side w-4/5">
 		<label for="my-drawer-2" class="drawer-overlay" />
 		<!-- SIDEBAR -->
 		<ul class="menu p-4 w-80 h-full bg-base-200 shadow-xl">
@@ -28,7 +28,7 @@
 			<label for="" class="menu-title"> ADMINISTRACIÓN </label>
 			<li><a href="/equipo"><Equipo /> Equipo</a></li>
 			<li><a href="/chatbots"><Chatbots /> Chatbots</a></li>
-			<li><a href="/campaña"><Campaa /> Campaña</a></li>
+			<li><a href="/campaña"><Campaa /> Campañas</a></li>
 			<li><a href="/informes"><Informes /> Informes</a></li>
 			<li><a href="/configuracion"><Configuracion /> Configuracion</a></li>
 		</ul>
