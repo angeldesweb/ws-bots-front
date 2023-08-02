@@ -8,12 +8,13 @@
 	import Respuestas from '../../lib/icons/Icons-Seccion/Respuestas.svelte';
 	import Informes from '../../lib/icons/Icons-Seccion/Informes.svelte';
 	import Configuracion from '../../lib/icons/Icons-Seccion/Configuracion.svelte';
+	import OpenSidebar from '../../lib/icons/OpenSidebar.svelte';
 </script>
 
 <div class="drawer lg:drawer-open">
 	<input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content">
-		<label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+		<label for="my-drawer-2" class="btn btn-ghost drawer-button lg:hidden"><OpenSidebar /></label>
 		<slot />
 	</div>
 	<div class="drawer-side">
