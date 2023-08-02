@@ -1,6 +1,6 @@
 
 <div class="flex justify-between pt-6 pr-5">
-    <h1 class="text-3xl pl-7 pt-3">Contactos</h1>
+    <h1 class="text-3xl pl-7 pt-3 text-[#7914f1] font-medium">Contactos</h1>
     <div class="flex items-center">
         <select class="select select-bordered mr-2 max-w-xs">
             <option disabled selected>Etiquetas</option>
@@ -17,15 +17,54 @@
                 <input type="text" placeholder="Search…" class="input input-bordered" />
             </div>
         </div> 
-        <button class="btn m-2" onclick="my_modal_1.showModal()">AGREGAR CONTACTO</button>
+        <button class="btn m-2 bg-violet-600 text-[#fff] hover:bg-violet-800" onclick="my_modal_1.showModal()">AGREGAR CONTACTO</button>
         <dialog id="my_modal_1" class="modal">
             <form method="dialog" class="modal-box">
-                <h3 class="font-bold text-lg">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
-                <div class="modal-action">
-                <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close</button>
-                </div>
+                <section>
+                    <div role="dialog" class="p-6 bg-white rounded-lg shadow-lg">
+                        <h2 class="text-lg font-medium mb-4">Agregar contacto</h2>
+                        <form class="space-y-4" action="#">
+                            <div>
+                                <h5 class="text-sm font-medium">Detalles del contacto</h5>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <input name="name" type="text" value="" placeholder="Nombre"
+                                            class="w-full border border-gray-400 rounded-lg py-2 px-3">
+                                    </div>
+                                    <div>
+                                        <input name="number" placeholder="+1 23456789" type="text" value=""
+                                            class="w-full border border-gray-400 rounded-lg py-2 px-3">
+                                    </div>
+                                    <div>
+                                        <input name="treatmentName" type="text" value="" placeholder="Procedimiento"
+                                            class="w-full border border-gray-400 rounded-lg py-2 px-3">
+                                    </div>
+                                    <div>
+                                        <input name="email" type="text" value="" placeholder="Correo Electrónico"
+                                            class="w-full border border-gray-400 rounded-lg py-2 px-3">
+                                    </div>
+                                </div>
+                                <h4 class="text-sm font-medium mt-4">Información Adicional</h4>
+                                <div class="mt-2">
+                                    <button type="button"
+                                        class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg text-white font-medium">
+                                        + AGREGAR INFORMACIÓN
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="flex justify-end mt-4">
+                            <button type="button"
+                                class="bg-gray-400 hover:bg-gray-500 px-4 py-2 rounded-lg text-white font-medium mr-4">
+                                Cancelar
+                            </button>
+                            <button type="submit"
+                                    class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-white font-medium">
+                                Guardar
+                            </button>
+                        </div>
+                    </div>
+                </section>
             </form>
         </dialog>
     </div>
@@ -35,7 +74,7 @@
     <div class="overflow-x-auto">
         <table class="table text-center">
             <!-- head -->
-            <thead class="text-base">
+            <thead class="text-base  bg-[#7914f1] text-[#fff]">
                 <tr>
                 <th></th>
                     <th>Nombre</th>

@@ -1,6 +1,6 @@
 
 <div class="flex justify-between pt-6 pr-5">
-    <h1 class="text-3xl pl-7 pt-3 pb-4">Configuracion</h1>
+    <h1 class="text-3xl pl-7 pt-3 pb-4 text-[#7914f1] font-medium">Configuracion</h1>
 </div>
 
 <section class="mt-1 mx-5 p-4 shadow-lg h-4/6 border border-solid divide-gray-200 rounded-xl">
@@ -15,6 +15,6 @@
             <option disabled selected>Huso horario</option>
             <option>America/Caracas (GMT-04)</option>
         </select>
-        <button class="btn m-2">Borrar datos de la cuenta</button>
+        <button class="btn m-2 bg-red-700 text-[#fff] hover:bg-red-800">Borrar datos de la cuenta</button>
     </div>
 </section>

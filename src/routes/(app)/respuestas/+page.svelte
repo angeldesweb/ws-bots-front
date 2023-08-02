@@ -1,6 +1,6 @@
 
 <div class="flex justify-between pt-6 pr-5">
-    <h1 class="text-3xl pl-7 pt-3">Respuestas Rapidas</h1>
+    <h1 class="text-3xl pl-7 pt-3 text-[#7914f1] font-medium">Respuestas Rapidas</h1>
     <div class="flex items-center">
         <div class="form-control pr-3">
             <div class="input-group">
@@ -18,15 +18,68 @@
             <option>Soportes</option>
             <option>Ventas</option>
         </select>
-        <button class="btn m-2" onclick="my_modal_1.showModal()">AÑADIR RESPUESTA RÁPIDA</button>
+        <button class="btn m-2 bg-violet-600 text-[#fff] hover:bg-violet-800" onclick="my_modal_1.showModal()">AÑADIR RESPUESTA RÁPIDA</button>
+        
         <dialog id="my_modal_1" class="modal">
             <form method="dialog" class="modal-box">
-                <h3 class="font-bold text-lg">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
-                <div class="modal-action">
-                <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close</button>
-                </div>
+                <section>
+                    <div role="dialog" class="bg-white rounded-lg shadow-lg p-6">
+                        <h2 class="text-lg font-medium mb-4">Añadir respuesta rápida</h2>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Palabra clave</label>
+                                <input  name="shortcut" 
+                                        type="text" 
+                                        required
+                                        class="w-full border border-gray-400 rounded-lg py-2 px-3">
+                                <p class="text-sm text-red-500 mt-1">Campo obligatorio</p>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Mensaje</label>
+                                <textarea   name="message" 
+                                            rows="5"
+                                            class="w-full border border-gray-400 rounded-lg py-2 px-3">
+                                </textarea>
+                                <div class="flex items-center mt-2">
+                                    <input  id="media-upload-button" 
+                                            type="file" 
+                                            style="display: none;">
+                                    <label  for="media-upload-button" 
+                                            class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg text-white font-medium"
+                                            title="Agregar archivo" 
+                                            style="cursor: pointer;">
+                                        Agregar archivo
+                                    </label>
+                                    <p class="text-sm text-gray-500 ml-4">Debe contener un archivo o texto</p>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Departamentos</label>
+                                <select class="w-full border border-gray-400 rounded-lg py-2 px-3">
+                                    <option value="">
+                                        Seleccione un departamento
+                                    </option>
+                                    <option value="1">
+                                        Departamento 1
+                                    </option>
+                                    <option value="2">
+                                        Departamento 2
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="flex justify-end mt-4">
+                                <button type="button"
+                                        class="bg-gray-400 hover:bg-gray-500 px-4 py-2 rounded-lg text-white font-medium mr-4">
+                                    Cancelar
+                                </button>
+                                <button type="submit"
+                                        class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-white font-medium">
+                                    Guardar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
             </form>
         </dialog>
     </div>
@@ -36,7 +89,7 @@
     <div class="overflow-x-auto">
         <table class="table text-center">
             <!-- head -->
-            <thead class="text-base">
+            <thead class="text-base bg-[#7914f1] text-[#fff]">
                 <tr>
                     <th>Atajo</th>
                     <th>Mensaje</th>

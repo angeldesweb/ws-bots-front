@@ -1,6 +1,6 @@
 <svg 
     xmlns="http://www.w3.org/2000/svg" 
-    class="icon icon-tabler icon-tabler-message-2" 
+    class="icon icon-tabler icon-tabler-message-2  w-16 h-8" 
     width="24" 
     height="24" 
     viewBox="0 0 24 24" 
