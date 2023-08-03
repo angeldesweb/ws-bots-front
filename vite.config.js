@@ -4,7 +4,7 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
 	plugins: [sveltekit()],
 	optimizeDeps: {
-		exclude: ['whatsapp-web.js']
+		exclude: ['whatsapp-web.js', 'svelte-loading-spinners']
 	},
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']

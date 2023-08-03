@@ -17,25 +17,25 @@
                     <h2 class="text-lg font-medium mb-4">Agregar usuario</h2>
                     <form class="space-y-4">
                         <div>
-                            <label class="block text-sm font-medium text-gray-700">Nombre:</label>
+                            <label for="" class="block text-sm font-medium text-gray-700">Nombre:</label>
                             <input  type="text"
                                     name="name"
                                     class="w-full border border-gray-400 rounded-lg py-2 px-3">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700">Contraseña:</label>
+                            <label for="" class="block text-sm font-medium text-gray-700">Contraseña:</label>
                             <input  type="password" 
                                     name="password"
                                     class="w-full border border-gray-400 rounded-lg py-2 px-3">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700">Correo Electrónico:</label>
+                            <label for="" class="block text-sm font-medium text-gray-700">Correo Electrónico:</label>
                             <input  type="text" 
                                     name="email"
                                     class="w-full border border-gray-400 rounded-lg py-2 px-3">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700">Perfil:</label>
+                            <label for="" class="block text-sm font-medium text-gray-700">Perfil:</label>
                             <select name="profile"
                                     class="w-full border border-gray-400 rounded-lg py-2 px-3">
                                 <option value="user">Adm</option>
@@ -43,7 +43,7 @@
                             </select>
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700">Departamentos</label>
+                            <label for="" class="block text-sm font-medium text-gray-700">Departamentos</label>
                             <select class="w-full border border-gray-400 rounded-lg py-2 px-3">
                                 <option value="">
                                     Seleccione un departamento
