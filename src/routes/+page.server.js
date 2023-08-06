@@ -1,7 +1,9 @@
 import { redirect } from '@sveltejs/kit';
-import { env } from '$env/dynamic/private';
+import { env } from '$env/dynamic/private'; 
 
 const api = env.API_URL;
+
+
 
 export const actions = {
 	login: async ({ request, cookies }) => {
